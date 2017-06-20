@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">eMMaXamarinSample-Android</string>
+	<string name="emma_session_key">emmamobileM6wQcLX8S</string>
+</resources>

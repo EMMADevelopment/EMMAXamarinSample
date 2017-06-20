@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMMAXamarinSample-iOS", "eMMaXamarinSample-iOS\eMMaXamarinSample-iOS.csproj", "{92725767-3B3E-4286-8E79-D9D81880DEA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Release|iPhone.Build.0 = Release|iPhone
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{92725767-3B3E-4286-8E79-D9D81880DEA1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.StandardHeader = $2
+	EndGlobalSection
+EndGlobal
