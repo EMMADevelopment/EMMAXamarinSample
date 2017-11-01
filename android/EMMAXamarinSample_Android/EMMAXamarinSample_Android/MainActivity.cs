@@ -2,36 +2,43 @@
 using Android.Widget;
 using Android.OS;
 
-using eMMaSDK;
+using EMMASDK;
+using IO.Emma.Android.Model;
 
 namespace eMMaXamarinSample_Android
 {
-	[Activity(Label = "EMMAXamarinSample-Android", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class MainActivity : Activity
-	{
-		int count = 1;
+    [Activity(Label = "eMMaXamarinSample-Android", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
+    public class MainActivity : Activity
+    {
 
-		protected override void OnCreate(Bundle savedInstanceState)
-		{
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
             base.OnCreate(savedInstanceState);
 
-			// Set our view from the "main" layout resource
-			SetContentView(Resource.Layout.Main);
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button>(Resource.Id.myButton);
+            // Get our button from the layout resource,
+            // and attach an event to it
+            Button sendTokenButton = FindViewById<Button>(Resource.Id.send_token);
 
-			button.Click += delegate { 
+            sendTokenButton.Click += delegate {
 
-				button.Text = string.Format("{0} clicks!", count++);
+                EMMA.Instance.TrackEvent("41e6f9a6446ff0cc11f8f4f5e1bd5908");
+            };
 
-				eMMa.TrackEvent("41e6f9a6446ff0cc11f8f4f5e1bd5908");
-			};
+            Button checkStartViewButton = FindViewById<Button>(Resource.Id.check_startview); 
+            checkStartViewButton.Click += delegate {
+                EMMA.Instance.GetInAppMessage(EMMACampaign.Type.Startview, null);
+            };
 
-            eMMa.CheckForRichPushUrl(this);
-		}
-	}
+            EMMA.Instance.CheckForRichPushUrl();
+        }
+
+        protected override void OnNewIntent(Android.Content.Intent intent)
+        {
+            base.OnNewIntent(intent);
+            EMMA.Instance.OnNewNotification(intent, true);
+        }
+    }
 }
-
-
