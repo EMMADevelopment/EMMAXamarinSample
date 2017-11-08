@@ -3,7 +3,8 @@ using Android.Widget;
 using Android.OS;
 
 using EMMASDK;
-using IO.Emma.Android.Model;
+using EMMASDK.Model;
+
 
 namespace eMMaXamarinSample_Android
 {
