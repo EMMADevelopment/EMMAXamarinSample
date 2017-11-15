@@ -22,17 +22,22 @@ namespace eMMaXamarinSampleiOS
             set;
         }
 
+        public readonly PushNotificationDelegate notificationDelegate = new PushNotificationDelegate();
+
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            EMMA.StartSession("emmaxamarinMA2E6IUjG");
             EMMA.SetDebuggerOutput(true);
+            EMMA.StartSession("emmaxamarinMA2E6IUjG");
 
             if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
-                EMMA.SetPushNotificationsDelegate(new PushNotificationDelegate());
+                //Disable or enable push alert
+                EMMA.SetPushSystemOptions(EMMAPushSystemOptions.PushSystemDisableAlert);
+
+                EMMA.SetPushNotificationsDelegate(notificationDelegate);
             }
 
             if (Runtime.Arch != Arch.SIMULATOR)
@@ -98,7 +103,7 @@ namespace eMMaXamarinSampleiOS
             // Handle the error
         }
 
-        internal class PushNotificationDelegate : UNUserNotificationCenterDelegate
+        public class PushNotificationDelegate : UNUserNotificationCenterDelegate
         {
 
             public override void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
