@@ -96,5 +96,12 @@
       <DependentUpon>LoginViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMMANotificationService\EMMANotificationService.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{41FC1AA5-FC72-4750-A4F9-6E659F13DD68}</Project>
+      <Name>EMMANotificationService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

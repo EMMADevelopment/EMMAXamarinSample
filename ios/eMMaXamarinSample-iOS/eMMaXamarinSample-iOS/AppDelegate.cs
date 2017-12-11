@@ -1,8 +1,6 @@
 ﻿using Foundation;
 using UIKit;
-using Foundation;
 using System;
-using UIKit;
 using EMMASDK;
 using ObjCRuntime;
 using UserNotifications;
