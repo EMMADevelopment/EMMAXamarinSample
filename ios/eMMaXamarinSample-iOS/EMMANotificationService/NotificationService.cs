@@ -75,7 +75,7 @@ namespace EMMANotificationService
                 else
                 {
                     NSFileManager fileManager = NSFileManager.DefaultManager;
-                    NSUrl localUrl = new NSUrl(String.Concat(location.Path, type));
+                    NSUrl localUrl = new NSUrl("file://" + String.Concat(location.Path, type));
                     fileManager.Move(location, localUrl, out error);
 
                     if (error != null)
