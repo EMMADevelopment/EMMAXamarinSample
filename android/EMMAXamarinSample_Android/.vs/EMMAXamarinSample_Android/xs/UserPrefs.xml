@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{E09743C1-752D-44B2-AF37-3BA885F4A39C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EMMAXamarinSample_Android/MainActivity.cs">
+    <Files>
+      <File FileName="EMMAXamarinSample_Android/Properties/AndroidManifest.xml" Line="45" Column="12" />
+      <File FileName="EMMAXamarinSample_Android/Resources/values/Strings.xml" Line="1" Column="1" />
+      <File FileName="EMMAXamarinSample_Android/MainActivity.cs" Line="23" Column="51" />
+      <File FileName="EMMAXamarinSample_Android/EMMAApplication.cs" Line="32" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.eMMaXamarinSample__Android PreferredExecutionTarget="Android.056f89e60a5cc272" />
+  <MultiItemStartupConfigurations />
+</Properties>

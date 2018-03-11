@@ -4,7 +4,8 @@ using Android.OS;
 
 using EMMASDK;
 using EMMASDK.Model;
-
+using Android.Content.PM;
+using Android.Runtime;
 
 namespace eMMaXamarinSample_Android
 {
@@ -18,6 +19,8 @@ namespace eMMaXamarinSample_Android
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            EMMA.Instance.StartTrackingLocation();
 
             // Get our button from the layout resource,
             // and attach an event to it
@@ -41,5 +44,10 @@ namespace eMMaXamarinSample_Android
             base.OnNewIntent(intent);
             EMMA.Instance.OnNewNotification(intent, true);
         }
-    }
+
+		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+		{
+            EMMA.Instance.OnRequestPermissionsResult(requestCode, permissions, (int[])(object)grantResults);
+		}
+	}
 }
