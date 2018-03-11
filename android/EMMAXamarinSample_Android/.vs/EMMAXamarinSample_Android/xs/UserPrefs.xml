@@ -3,9 +3,22 @@
     <Files>
       <File FileName="EMMAXamarinSample_Android/Properties/AndroidManifest.xml" Line="45" Column="12" />
       <File FileName="EMMAXamarinSample_Android/Resources/values/Strings.xml" Line="1" Column="1" />
-      <File FileName="EMMAXamarinSample_Android/MainActivity.cs" Line="23" Column="51" />
+      <File FileName="EMMAXamarinSample_Android/MainActivity.cs" Line="28" Column="13" />
       <File FileName="EMMAXamarinSample_Android/EMMAApplication.cs" Line="32" Column="2" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EMMAXamarinSample_Android" expanded="True">
+            <Node name="eMMaXamarinSample_Android" expanded="True" selected="True">
+              <Node name="References" expanded="True">
+                <Node name="From Packages" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

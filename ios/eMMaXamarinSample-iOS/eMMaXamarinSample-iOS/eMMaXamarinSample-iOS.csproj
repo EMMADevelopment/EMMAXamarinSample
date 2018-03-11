@@ -23,6 +23,7 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchFastDev>true</MtouchFastDev>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -69,7 +70,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="eMMaXamarinBindings-iOS">
-      <HintPath>..\libraries\eMMaXamarinBindings-iOS.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Desktop\eMMaXamarinBindings-iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
