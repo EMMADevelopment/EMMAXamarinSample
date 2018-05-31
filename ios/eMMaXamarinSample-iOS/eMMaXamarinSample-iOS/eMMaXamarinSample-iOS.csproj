@@ -70,7 +70,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="eMMaXamarinBindings-iOS">
-      <HintPath>..\libraries\eMMaXamarinBindings-iOS.dll</HintPath>
+      <HintPath>..\..\..\..\emmaxamarinsdk\src\eMMaXamarinBindings-iOS\eMMaXamarinBindings-iOS\bin\Release\eMMaXamarinBindings-iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
