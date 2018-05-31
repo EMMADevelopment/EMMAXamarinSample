@@ -3,6 +3,18 @@
     <Files>
       <File FileName="eMMaXamarinSample-iOS/Info.plist" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EMMAXamarinSample-iOS" expanded="True">
+            <Node name="EMMANotificationService" selected="True" />
+            <Node name="eMMaXamarinSample-iOS" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.EMMANotificationService automaticSigning="False" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
