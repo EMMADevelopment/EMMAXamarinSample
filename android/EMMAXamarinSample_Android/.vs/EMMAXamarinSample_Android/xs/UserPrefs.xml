@@ -1,33 +1,33 @@
 ﻿<Properties StartupConfiguration="{E09743C1-752D-44B2-AF37-3BA885F4A39C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EMMAXamarinSample_Android/Properties/AndroidManifest.xml">
+  <MonoDevelop.Ide.ItemProperties.AndroidExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.056f89e60a5cc272" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidExample/Properties/AndroidManifest.xml">
     <Files>
-      <File FileName="EMMAXamarinSample_Android/Properties/AndroidManifest.xml" Line="45" Column="12" />
-      <File FileName="EMMAXamarinSample_Android/MainActivity.cs" Line="54" Column="1" />
-      <File FileName="EMMAXamarinSample_Android/EMMAApplication.cs" Line="25" Column="26" />
-      <File FileName="EMMAXamarinSample_Android/packages.config" Line="1" Column="1" />
-      <File FileName="../../../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.2.0-16/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2188" Column="3" />
+      <File FileName="AndroidExample/Properties/AndroidManifest.xml" Line="22" Column="14" />
+      <File FileName="AndroidExample/MainActivity.cs" Line="10" Column="2" />
+      <File FileName="AndroidExample/Resources/values/Strings.xml" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EMMAXamarinSample_Android" expanded="True">
-            <Node name="eMMaXamarinSample_Android" expanded="True">
-              <Node name="Assets" expanded="True" />
+            <Node name="AndroidExample" expanded="True">
+              <Node name="References" expanded="True" />
               <Node name="Properties" expanded="True">
                 <Node name="AndroidManifest.xml" selected="True" />
               </Node>
-              <Node name="Resources" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.eMMaXamarinSample__Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5_API_17" />
   <MultiItemStartupConfigurations />
 </Properties>

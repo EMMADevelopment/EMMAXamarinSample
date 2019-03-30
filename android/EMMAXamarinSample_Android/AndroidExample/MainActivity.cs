@@ -1,15 +1,14 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-
-using EMMASDK;
-using EMMASDK.Model;
 using Android.Content.PM;
 using Android.Runtime;
+using IO.Emma.Android;
+using IO.Emma.Android.Model;
 
-namespace eMMaXamarinSample_Android
+namespace AndroidExample
 {
-    [Activity(Label = "eMMaXamarinSample-Android", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
+    [Activity(Label = "EMMA Xamarin", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
     public class MainActivity : Activity
     {
 
@@ -17,31 +16,37 @@ namespace eMMaXamarinSample_Android
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
             EMMA.Instance.StartTrackingLocation();
 
-            // Get our button from the layout resource,
-            // and attach an event to it
             Button sendTokenButton = FindViewById<Button>(Resource.Id.send_token);
 
             sendTokenButton.Click += delegate {
 
-                EMMA.Instance.TrackEvent("41e6f9a6446ff0cc11f8f4f5e1bd5908");
+                EMMAEventRequest eventRequest = 
+                    new EMMAEventRequest("41e6f9a6446ff0cc11f8f4f5e1bd590");
+                EMMA.Instance.TrackEvent(eventRequest);
             };
 
             Button checkStartViewButton = FindViewById<Button>(Resource.Id.check_startview); 
             checkStartViewButton.Click += delegate {
-                EMMA.Instance.GetInAppMessage(EMMACampaign.Type.Startview, null);
+
+                EMMAInAppRequest inAppRequest = 
+                    new EMMAInAppRequest(EMMACampaign.Type.Startview);
+                EMMA.Instance.GetInAppMessage(inAppRequest);
             };
 
+            //When notification is opened this method checks if notification has
+            //rich push data
             EMMA.Instance.CheckForRichPushUrl();
         }
 
         protected override void OnNewIntent(Android.Content.Intent intent)
         {
             base.OnNewIntent(intent);
+            //When notification is opened this method checks if notification has
+            //rich push data. Only when app does not pass through the method onCreate.
             EMMA.Instance.OnNewNotification(intent, true);
         }
 

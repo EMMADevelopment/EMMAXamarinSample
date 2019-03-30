@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="send_token">Send event</string>
-	<string name="app_name">eMMaXamarinSample-Android</string>
+	<string name="app_name">EMMA Xamarin</string>
 	<string name="emma_session_key">emmaxamarinMA2E6IUjG</string>
-	<string name="deeplink_activity">io.emma.emmaxamarinsample_android.MainActivity</string>
+	<string name="deeplink_activity">io.emma.xamarinsample.MainActivity</string>
 	<string name="check_startview">Check StartView</string>
 </resources>

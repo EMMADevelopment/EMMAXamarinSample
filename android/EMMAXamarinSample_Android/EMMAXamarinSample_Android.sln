@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMMAXamarinSample_Android", "eMMaXamarinSample_Android\eMMaXamarinSample_Android.csproj", "{E09743C1-752D-44B2-AF37-3BA885F4A39C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidExample", "AndroidExample\AndroidExample.csproj", "{E09743C1-752D-44B2-AF37-3BA885F4A39C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,10 @@
 ﻿using Android.App;
 using System;
 using Android.Runtime;
-using EMMASDK;
+using IO.Emma.Android;
+using IO.Emma.Android.Model;
 
-namespace eMMaXamarinSample_Android
+namespace AndroidExample
 {
     [Application]
     public class EMMAApplication : Application
@@ -25,7 +26,13 @@ namespace eMMaXamarinSample_Android
                 .Build();
 
             EMMA.Instance.StartSession(configuration);
-            EMMA.Instance.StartPushSystem(Java.Lang.Class.FromType(typeof(MainActivity)), Resource.Drawable.push_icon, true);
+
+            EMMAPushOptions pushOptions = new EMMAPushOptions.Builder(
+            Java.Lang.Class.FromType(typeof(MainActivity)),
+                Resource.Drawable.push_icon
+            ).Build();
+
+            EMMA.Instance.StartPushSystem(pushOptions);
 
         }
     }

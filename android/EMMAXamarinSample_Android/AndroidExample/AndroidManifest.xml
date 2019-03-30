@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="io.emma.xamarinsample">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="28" />
+    
+	<!-- RUNTIME PERMISSIONS -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	
+	<application android:icon="@mipmap/icon" android:label="@string/app_name">
+        
+        <!-- Receiver for old Play Store apps -->
+		<receiver android:name="io.emma.android.referral.EMMAReferralReceiver" android:exported="false">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+        
+		<!-- PUSH -->
+        <service
+            android:name="io.emma.android.push.EMMAFcmMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        
+        <!-- DEEPLINKING -->
+		<activity android:name="io.emma.android.activities.EMMADeepLinkActivity" android:noHistory="true" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="emmaxamarin" />
+			</intent-filter>
+		</activity>
+       
+		<meta-data android:name="io.emma.DEEPLINK_OPEN_ACTIVITY" android:value="@string/deeplink_activity" />
+		<meta-data android:name="io.emma.SESSION_KEY" android:value="@string/emma_session_key" />
+	</application>
+</manifest>
