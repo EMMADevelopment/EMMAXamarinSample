@@ -252,71 +252,74 @@ namespace AndroidExample
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0014
-			public const int action0 = 2131427348;
-			
-			// aapt resource value: 0x7f0b0011
-			public const int action_container = 2131427345;
-			
-			// aapt resource value: 0x7f0b0018
-			public const int action_divider = 2131427352;
-			
-			// aapt resource value: 0x7f0b0012
-			public const int action_image = 2131427346;
+			// aapt resource value: 0x7f0b0016
+			public const int action0 = 2131427350;
 			
 			// aapt resource value: 0x7f0b0013
-			public const int action_text = 2131427347;
+			public const int action_container = 2131427347;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int actions = 2131427362;
+			// aapt resource value: 0x7f0b001a
+			public const int action_divider = 2131427354;
 			
-			// aapt resource value: 0x7f0b0007
-			public const int async = 2131427335;
-			
-			// aapt resource value: 0x7f0b0008
-			public const int blocking = 2131427336;
+			// aapt resource value: 0x7f0b0014
+			public const int action_image = 2131427348;
 			
 			// aapt resource value: 0x7f0b0015
-			public const int cancel_action = 2131427349;
-			
-			// aapt resource value: 0x7f0b0010
-			public const int check_startview = 2131427344;
-			
-			// aapt resource value: 0x7f0b001d
-			public const int chronometer = 2131427357;
-			
-			// aapt resource value: 0x7f0b000d
-			public const int close_button = 2131427341;
-			
-			// aapt resource value: 0x7f0b0005
-			public const int emma_banner_id = 2131427333;
-			
-			// aapt resource value: 0x7f0b000c
-			public const int emma_main_webview = 2131427340;
-			
-			// aapt resource value: 0x7f0b0006
-			public const int emma_strip_id = 2131427334;
-			
-			// aapt resource value: 0x7f0b000e
-			public const int emma_webview = 2131427342;
+			public const int action_text = 2131427349;
 			
 			// aapt resource value: 0x7f0b0024
-			public const int end_padder = 2131427364;
+			public const int actions = 2131427364;
 			
 			// aapt resource value: 0x7f0b0009
-			public const int forever = 2131427337;
-			
-			// aapt resource value: 0x7f0b001f
-			public const int icon = 2131427359;
-			
-			// aapt resource value: 0x7f0b0023
-			public const int icon_group = 2131427363;
-			
-			// aapt resource value: 0x7f0b001e
-			public const int info = 2131427358;
+			public const int async = 2131427337;
 			
 			// aapt resource value: 0x7f0b000a
-			public const int italic = 2131427338;
+			public const int blocking = 2131427338;
+			
+			// aapt resource value: 0x7f0b0017
+			public const int cancel_action = 2131427351;
+			
+			// aapt resource value: 0x7f0b0012
+			public const int check_startview = 2131427346;
+			
+			// aapt resource value: 0x7f0b001f
+			public const int chronometer = 2131427359;
+			
+			// aapt resource value: 0x7f0b000f
+			public const int close_button = 2131427343;
+			
+			// aapt resource value: 0x7f0b0007
+			public const int emma_banner_id = 2131427335;
+			
+			// aapt resource value: 0x7f0b000e
+			public const int emma_main_webview = 2131427342;
+			
+			// aapt resource value: 0x7f0b0008
+			public const int emma_strip_id = 2131427336;
+			
+			// aapt resource value: 0x7f0b0010
+			public const int emma_webview = 2131427344;
+			
+			// aapt resource value: 0x7f0b0026
+			public const int end_padder = 2131427366;
+			
+			// aapt resource value: 0x7f0b000b
+			public const int forever = 2131427339;
+			
+			// aapt resource value: 0x7f0b0006
+			public const int glide_custom_view_target_tag = 2131427334;
+			
+			// aapt resource value: 0x7f0b0021
+			public const int icon = 2131427361;
+			
+			// aapt resource value: 0x7f0b0025
+			public const int icon_group = 2131427365;
+			
+			// aapt resource value: 0x7f0b0020
+			public const int info = 2131427360;
+			
+			// aapt resource value: 0x7f0b000c
+			public const int italic = 2131427340;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int line1 = 2131427328;
@@ -324,44 +327,47 @@ namespace AndroidExample
 			// aapt resource value: 0x7f0b0001
 			public const int line3 = 2131427329;
 			
-			// aapt resource value: 0x7f0b0017
-			public const int media_actions = 2131427351;
-			
-			// aapt resource value: 0x7f0b000b
-			public const int normal = 2131427339;
-			
-			// aapt resource value: 0x7f0b0021
-			public const int notification_background = 2131427361;
-			
-			// aapt resource value: 0x7f0b001a
-			public const int notification_main_column = 2131427354;
-			
 			// aapt resource value: 0x7f0b0019
-			public const int notification_main_column_container = 2131427353;
+			public const int media_actions = 2131427353;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int right_icon = 2131427360;
+			// aapt resource value: 0x7f0b000d
+			public const int normal = 2131427341;
 			
-			// aapt resource value: 0x7f0b001b
-			public const int right_side = 2131427355;
-			
-			// aapt resource value: 0x7f0b000f
-			public const int send_token = 2131427343;
-			
-			// aapt resource value: 0x7f0b0016
-			public const int status_bar_latest_event_content = 2131427350;
-			
-			// aapt resource value: 0x7f0b0002
-			public const int text = 2131427330;
-			
-			// aapt resource value: 0x7f0b0003
-			public const int text2 = 2131427331;
+			// aapt resource value: 0x7f0b0023
+			public const int notification_background = 2131427363;
 			
 			// aapt resource value: 0x7f0b001c
-			public const int time = 2131427356;
+			public const int notification_main_column = 2131427356;
+			
+			// aapt resource value: 0x7f0b001b
+			public const int notification_main_column_container = 2131427355;
+			
+			// aapt resource value: 0x7f0b0022
+			public const int right_icon = 2131427362;
+			
+			// aapt resource value: 0x7f0b001d
+			public const int right_side = 2131427357;
+			
+			// aapt resource value: 0x7f0b0011
+			public const int send_token = 2131427345;
+			
+			// aapt resource value: 0x7f0b0018
+			public const int status_bar_latest_event_content = 2131427352;
+			
+			// aapt resource value: 0x7f0b0002
+			public const int tag_transition_group = 2131427330;
+			
+			// aapt resource value: 0x7f0b0003
+			public const int text = 2131427331;
 			
 			// aapt resource value: 0x7f0b0004
-			public const int title = 2131427332;
+			public const int text2 = 2131427332;
+			
+			// aapt resource value: 0x7f0b001e
+			public const int time = 2131427358;
+			
+			// aapt resource value: 0x7f0b0005
+			public const int title = 2131427333;
 			
 			static Id()
 			{
@@ -594,18 +600,30 @@ namespace AndroidExample
 			public const int FontFamily_fontProviderQuery = 2;
 			
 			public static int[] FontFamilyFont = new int[] {
+					16844082,
+					16844083,
+					16844095,
 					2130771974,
 					2130771975,
 					2130771976};
 			
-			// aapt resource value: 1
-			public const int FontFamilyFont_font = 1;
-			
 			// aapt resource value: 0
-			public const int FontFamilyFont_fontStyle = 0;
+			public const int FontFamilyFont_android_font = 0;
 			
 			// aapt resource value: 2
-			public const int FontFamilyFont_fontWeight = 2;
+			public const int FontFamilyFont_android_fontStyle = 2;
+			
+			// aapt resource value: 1
+			public const int FontFamilyFont_android_fontWeight = 1;
+			
+			// aapt resource value: 4
+			public const int FontFamilyFont_font = 4;
+			
+			// aapt resource value: 3
+			public const int FontFamilyFont_fontStyle = 3;
+			
+			// aapt resource value: 5
+			public const int FontFamilyFont_fontWeight = 5;
 			
 			static Styleable()
 			{
