@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emmaxamarin" translatesAutoresizingMaskIntoConstraints="NO" id="3663">
+                                <rect key="frame" x="72" y="38" width="231" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="bud-Bf-54I"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                                <rect key="frame" x="75" y="302" width="225" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="5019"/>
+                                    <constraint firstAttribute="height" constant="68" id="5020"/>
+                                </constraints>
+                                <state key="normal" title="Send event">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="EventButton_TouchUpInside:" destination="BYZ-38-t0r" id="5263" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3714">
+                                <rect key="frame" x="75" y="390" width="225" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="4450"/>
+                                    <constraint firstAttribute="height" constant="68" id="4451"/>
+                                </constraints>
+                                <state key="normal" title="Check Startview">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CheckStartviewButton_TouchUpInside:" destination="BYZ-38-t0r" id="5278" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3714" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="20" id="3xd-YX-OxG"/>
+                            <constraint firstItem="3714" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="Bxj-Eo-JE3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3714" secondAttribute="bottom" constant="209" id="FLZ-k2-mOR"/>
+                            <constraint firstItem="17" firstAttribute="top" secondItem="3663" secondAttribute="bottom" constant="33" id="G7Y-kV-cFI"/>
+                            <constraint firstItem="3714" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="LPb-Qh-U9C"/>
+                            <constraint firstItem="3663" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Txu-wL-FRW"/>
+                            <constraint firstItem="3663" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="U3F-Om-ebK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EventButton" destination="17" id="name-outlet-17"/>
+                        <outlet property="CheckStartviewButton" destination="3714" id="name-outlet-3714"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.8" y="-0.4497751"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emmaxamarin" width="512" height="512"/>
+    </resources>
+</document>

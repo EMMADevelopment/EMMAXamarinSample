@@ -3,8 +3,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Content.PM;
 using Android.Runtime;
-using IO.Emma.Android;
-using IO.Emma.Android.Model;
+using EMMASDK;
+using EMMASDK.Model;
 
 namespace AndroidExample
 {

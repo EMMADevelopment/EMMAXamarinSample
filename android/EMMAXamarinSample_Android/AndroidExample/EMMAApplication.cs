@@ -1,8 +1,8 @@
 ﻿using Android.App;
 using System;
 using Android.Runtime;
-using IO.Emma.Android;
-using IO.Emma.Android.Model;
+using EMMASDK;
+using EMMASDK.Model;
 
 namespace AndroidExample
 {

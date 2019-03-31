@@ -1,0 +1,125 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{92725767-3B3E-4286-8E79-D9D81880DEA1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>iOSExample</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>iOSExample</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFastDev>true</MtouchFastDev>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchDebug>true</MtouchDebug>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="EmmaiOSBindings">
+      <HintPath>..\libraries\EmmaiOSBindings.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Assets.xcassets\.DS_Store" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\100.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\114.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\120.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\144.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\152.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\167.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\180.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\20.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\40.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\50.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\57.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\58.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\60.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\72.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\76.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\80.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\87.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\emmaxamarin.imageset\1024-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\emmaxamarin.imageset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMMANotificationService\EMMANotificationService.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{41FC1AA5-FC72-4750-A4F9-6E659F13DD68}</Project>
+      <Name>EMMANotificationService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
