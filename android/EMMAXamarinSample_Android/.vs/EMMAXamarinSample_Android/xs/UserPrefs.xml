@@ -1,21 +1,18 @@
 ﻿<Properties StartupConfiguration="{E09743C1-752D-44B2-AF37-3BA885F4A39C}|Default">
-  <MonoDevelop.Ide.ItemProperties.AndroidExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_27" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidExample/google-services.json">
+  <MonoDevelop.Ide.ItemProperties.AndroidExample PreferredExecutionTarget="Android.056f89e60a5cc272" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidExample/packages.config">
     <Files>
-      <File FileName="AndroidExample/Properties/AndroidManifest.xml" />
-      <File FileName="AndroidExample/MainActivity.cs" Line="36" Column="66" />
+      <File FileName="AndroidExample/MainActivity.cs" />
       <File FileName="AndroidExample/Resources/values/Strings.xml" />
       <File FileName="AndroidExample/EMMAApplication.cs" />
-      <File FileName="AndroidExample/google-services.json" Line="1" Column="1" />
+      <File FileName="AndroidExample/packages.config" Line="1" Column="1" />
+      <File FileName="AndroidExample/Properties/AndroidManifest.xml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EMMAXamarinSample_Android" expanded="True">
-            <Node name="AndroidExample" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="google-services.json" selected="True" />
-            </Node>
+            <Node name="AndroidExample" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
