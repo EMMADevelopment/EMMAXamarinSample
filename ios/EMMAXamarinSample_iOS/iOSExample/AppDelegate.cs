@@ -27,19 +27,17 @@ namespace iOSExample
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            EMMA.SetDebuggerOutput(true);
-            EMMA.StartSession("emmaxamarinMA2E6IUjG");
+            EMMAConfiguration configuration = new EMMAConfiguration();
+            configuration.SessionKey = "emmaxamarinMA2E6IUjG";
+            configuration.QueueTime = 25;
+            configuration.PushNotificationsDelegate = notificationDelegate;
+            configuration.DebugEnabled = true;
 
-            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+            EMMA.StartSessionWithConfiguration(configuration);
+
+            if (Runtime.Arch != Arch.SIMULATOR && UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
-                //Disable or enable push alert
                 EMMA.SetPushSystemOptions(EMMAPushSystemOptions.PushSystemDisableAlert);
-
-                EMMA.SetPushNotificationsDelegate(notificationDelegate);
-            }
-
-            if (Runtime.Arch != Arch.SIMULATOR)
-            {
                 EMMA.StartPushSystem();
             }
 
