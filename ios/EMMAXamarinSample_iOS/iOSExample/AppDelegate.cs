@@ -43,6 +43,13 @@ namespace iOSExample
                 EMMA.StartPushSystem();
             }
 
+
+            if (UIDevice.CurrentDevice.CheckSystemVersion(14, 0))
+            {
+                EMMA.RequestTrackingWithIdfa();
+            }
+
+
             return true;
         }
 

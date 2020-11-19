@@ -47,5 +47,7 @@
 	</array>
 	<key>CFBundleName</key>
 	<string>EMMA Xamarin</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Allow third party tracking</string>
 </dict>
 </plist>
